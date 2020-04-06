@@ -8,10 +8,15 @@ let package = Package(
        .macOS(.v10_14), .iOS(.v8),
     ],
     products: [
-        .library(name: "Branch", targets: ["Branch"]),
+        .library(name: "Branch", type: .dynamic, targets: ["Branch"]),
     ],
     dependencies: [],
     targets: [
-        .target(name: "Branch", dependencies: [], path: "Branch-SDK"),
+        .target(name: "Branch",
+		dependencies: [],
+		path: "Sources",
+		exclude: [],
+		sources: ["."],
+		publicHeadersPath: "Sources"),
     ]
 )
