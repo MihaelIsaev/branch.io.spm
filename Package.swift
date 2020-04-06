@@ -14,10 +14,7 @@ let package = Package(
     targets: [
         .target(name: "Branch",
 		dependencies: [],
-		path: "Sources",
-		exclude: [],
-		sources: [".", "include"],
-		publicHeadersPath: "include"
+		path: "Sources"
 	)
     ]
 )
