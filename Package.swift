@@ -5,13 +5,12 @@ import PackageDescription
 let package = Package(
     name: "Branch",
     platforms: [
-       .macOS(.v10_14), .iOS(.v8),
+       .macOS(.v10_14)
     ],
     products: [
-        .library(name: "Branch", targets: ["Branch"]),
+        .library(name: "Branch", targets: ["Branch"])
     ],
-    dependencies: [],
     targets: [
-        .target(name: "Branch", dependencies: [], path: "Branch-SDK"),
+        .target(name: "Branch")
     ]
 )
